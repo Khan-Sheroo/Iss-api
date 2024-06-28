@@ -1,0 +1,41 @@
+{% extends 'Copiaubase.html' %}
+{% block title %}Services{% endblock %}
+
+{% block content %}
+<div class="container-sub">
+    <div class="row">
+        <h3 class="heading2">Our Expertise</h3> 
+        <p class="second">Copiau Incorporated boasts a list of Services, specializing in <b>accounting</b>, <b>tax</b> and <b>financial statements</b>. We provide guidance and support to businesses seeking precision, clarity and <b>strategic insight</b>. With a dedicated team of professionals, Copiau Incorporated empowers clients to navigate complex financial landscapes with confidence,maximizing <b>savings</b> and driving <b>sustainable growth</b>. Experience excellence in financial services - partner with Copiau Incorporated today. </p>
+    </div>
+</div>    
+<div class="media">
+  <img class="row1" src="{{url_for('static', filename='images/tax.jpg')}}" alt="Generic placeholder image"> 
+  <div class="media-body">
+    <h5 class="oexp">OUR EXPERTISE</h5>
+    <h4 class="special">TAX SERVICES</h4>
+    <p class="neat">At Copiau Incorporated, we specialize in <b>Tax services</b> by intergrating cutting edge technology and personalized expertise to streamline tax processes for induviduals and businesses. With focus on maximizing deductions, minimizing liabilities and ensuring compliance.<br>Whether navigating complex tax codes, preparing returns, or representing clients in audits, Copiau's commitment to excellence and client satisfaction distinguishes them as a trusted partner in achieving financial goals while maintaining regulatory integrity. </p>
+  </div>
+</div>
+
+<div class="media">
+    <img class="row1"  src="{{url_for('static', filename='images/accounting.jpg')}}"  alt="Generic placeholder image"> 
+    <div class="media-body">
+      <h5 class="oexp">OUR EXPERTISE</h5>
+      <h4 class="special">ACCOUNTING</h4>
+      <p class="neat">Copiau Inc. excels in delivering top-tier accounting services customized for businesses and individuals alike. Our team of seasoned experts handles everything from detailed financial reporting and meticulous bookkeeping to thorough audit preparation.<br><br> We pride ourselves on accuracy, transparency and a personalized approach, ensuring our clients gain valuable financial insights and achieve their financial goals. With Copiau Inc., you can trust that your accounting needs are managed with precision and dedication.    </div>    
+</div>
+<div class="media">
+    <img class="row1" src="{{url_for('static', filename='images/coin.jpg')}}"  alt="Generic placeholder image"> 
+    <div class="media-body">
+      <h5 class="oexp">OUR EXPERTISE</h5>
+      <h4 class="special">FINANCIAL STATEMENTS</h4>
+      <p class="neat">Copiau Inc. is your go-to destination for expertly crafted financial statements tailored to your business needs. With a team of skilled professionals, we meticulously analyze your financial data to produce clear, accurate and insightful statements that guide your financial decisions.<br><br> From balance sheets to income statements, our commitment to precision and transparency ensures you have the information you need to navigate confidently through your financial landscape. Trust Copiau Inc. for comprehensive financial statements that empower your success.
+                    
+            
+{% endblock %}
+{% block toc %}
+   <h2>Table of content</h2>
+   <ul>
+    <li><a href="service1">Service one</a></li>
+   </ul>
+{% endblock %}

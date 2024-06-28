@@ -1,0 +1,63 @@
+{% extends 'Copiaubase.html' %}
+{% block title %}Home Page{% endblock %}
+
+ 
+
+{% block content %}
+<div class="container-text">
+    <div class="row">
+        <div class="col-sm-6">
+        <h5 class="heading">COPIAU INCORPORATED</h5> 
+        <p class="intro">At Copiau Incorporated, we specialize in providing comprehensive <b>tax</b> and <b>tax registration</b> services tailored to meet the unique needs of our clients. As a premier accounting firm, we pride ourselves on delivering accurate, timely and personalized financial solutions to <b>individuals</b> and <b>businesses</b> alike.<br><br> Our team of seasoned professionals are dedicated to helping you navigate the complexities of the <b>tax landscape</b> with ease and confidence. Whether you need assistance with <b>tax preparation</b>, <b>compliance</b>, <b>planning</b> or <b>registration</b>, we are here to ensure that you are fully informed and <b>compliant</b> with <b>all regulatory requirements</b>.</p>
+        </div>
+        <img class="fpage" src="{{url_for('static', filename='images/high1.jpg')}}"alt="Generic placeholder image">
+    </div>
+</div> 
+
+<div class="container-sub">
+    <div class="row">
+        <h3 class="expt">Our Expertise</h3> 
+        <p class="second">Copiau Incorporated boasts a list of Services, specializing in <b>accounting</b>, <b>tax</b> and <b>financial statements</b>. We provide guidance and support to businesses seeking precision, clarity and <b>strategic insight</b>. With a dedicated team of professionals, Copiau Incorporated empowers clients to navigate complex financial landscapes with confidence, maximizing <b>savings</b> and driving <b>sustainable growth</b>. Experience excellence in financial services - <b>Contact us today for a hassle-free quotation.</b>. 
+        </p>
+    </div>
+</div>
+
+
+<div class="container-block01">
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="general">CONTACT</h6>
+            <h4 class="gsub">GENERAL</h4>
+            <p class="email">Email: <a href="mailto:sheroo-khan@outlook.com">info@copiau.co.za</a></p>
+        </div>
+        <div class="col-sm-3">
+            <h6 class="phone">CONTACT</h6>
+            <h4 class="psub">PHONE</h4>
+            <p class="number">Call: <a href="tel:+27605398234">060-398-234</a></p>
+        </div>    
+        <div class="col-sm-3">
+            <h6 class="career">CONTACT</h6>
+            <h4 class="csub">CAREERS</h4>
+            <p class="email">Email: <a href="mailto:sheroo-khan@outlook.com">info@copiau.co.za</a></p>
+        </div>
+    </div>
+</div>
+<form method="POST" action="mailto:sheroo-khan@outlook.com" enctype="text/plain" >
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name ="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name ="email" required><br><br>
+
+    <label for="contact">Contact Number:</label><br>
+    <input type="Integer" id="Contact" name ="Contact"  required><br><br>
+
+    <label for="Message">Message:</label><br>
+    <input type="Message" id="Message" name ="Message"  required><br><br>
+
+    <button type="submit" value="Submit">Submit</button>
+</form>
+
+{% endblock %}
+
+   
